@@ -2,6 +2,8 @@
 
 ImgZoomToMp4 is a Python-based tool that takes a series of zoomed images and stitches them together to create a zoom-in/zoom-out video. Optionally, you can convert the resulting video into a GIF file.
 
+Created by me and ChatGPT
+
 ## Prerequisites
 
 Before running the scripts, you need to ensure that you have Python and FFmpeg installed on your system. You can download Python from [here](https://www.python.org/downloads/) and FFmpeg from [here](https://www.ffmpeg.org/download.html).

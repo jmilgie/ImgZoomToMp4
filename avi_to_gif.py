@@ -6,12 +6,17 @@ def convert_avi_to_gif(input_file, output_file):
 
     # Set the desired frame rate (frames per second)
     frame_rate = 15
+    
+    # Set the scaling factor for width and height
+    scale_factor = 'iw/2:ih/2'  # 50% of the original size
+
 
     # Construct the FFmpeg command
     ffmpeg_command = [
         ffmpeg_path,
         '-i', input_file,
         '-r', str(frame_rate),
+        '-vf', f'scale={scale_factor}',
         '-c:v', 'gif',
         output_file
     ]
